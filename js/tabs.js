@@ -3,6 +3,7 @@ const tabsFunc = () => {
    const tabsTitle = document.querySelector('.card-details__title')
    const tabsPrice = document.querySelector('.card-details__price')
    const tabsImage = document.querySelector('.card__image_item')
+   const phoneMemory = document.querySelector('.description__memory')
    const mainTitle = document.querySelector('title')
 
    const tabsOptions = [
@@ -29,6 +30,7 @@ const tabsFunc = () => {
    const changeContent = (index) => {
       tabsTitle.textContent = `Смартфон Apple iPhone 13 Pro ${tabsOptions[index].memory}GB ${tabsOptions[index].name}`
       tabsPrice.textContent = `${tabsOptions[index].price}₽`
+      phoneMemory.textContent = `Встроенная память (ROM) ${tabsOptions[index].memory} ГБ`
       mainTitle.textContent = `Apple iPhone 13 Pro ${tabsOptions[index].name}`
 
       tabsImage.setAttribute('src', tabsOptions[index].image)
